@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<bean id="student2" class="com.yjj.spring_6_1.Student">
+		<constructor-arg>
+			<value>이순신</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>40</value>
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>말타기</value>
+				<value>활쏘기</value>
+				<value>배타기</value>
+			</list>
+		</constructor-arg>
+		
+		<property name="height">
+			<value>180</value>
+		</property>
+		<property name="weight">
+			<value>80</value>
+		</property>
+		
+	</bean>
+	
+	
+	
+	<bean id="family" class="com.yjj.spring_6_1.Family" c:father="길동이 아빠" c:mother="길동이 엄마" p:sister="길동이 누나" p:brother="길동이 형" />
+	
+	
+
+</beans>
